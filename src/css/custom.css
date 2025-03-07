@@ -1,0 +1,57 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+@import "tailwindcss";
+
+@custom-variant dark (&:is([data-theme="dark"] *));
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #7a4522;
+  --ifm-color-primary-dark: #6e3e1f;
+  --ifm-color-primary-darker: #683b1d;
+  --ifm-color-primary-darkest: #553018;
+  --ifm-color-primary-light: #864c25;
+  --ifm-color-primary-lighter: #8c4f27;
+  --ifm-color-primary-lightest: #9f5a2c;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #d4c62d;
+  --ifm-color-primary-dark: #c0b327;
+  --ifm-color-primary-darker: #b5a925;
+  --ifm-color-primary-darkest: #958b1f;
+  --ifm-color-primary-light: #d8cc42;
+  --ifm-color-primary-lighter: #dbcf4d;
+  --ifm-color-primary-lightest: #e1d76d;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* tailwind seems to have broken some link alignments. Fixing them. */
+.navbar__link, .footer__link-item, .theme-edit-this-page {
+	display: flex;
+	align-items: center;
+}
+.breadcrumbs {
+	display: flex;
+}
+
+.breadcrumbs__item {
+	display: inline-flex;
+	align-items: center;
+}
+
+/* tailwind strips lists of their style. Adding it back: https://stackoverflow.com/questions/75915737/tailwind-is-there-a-way-to-disable-preflight-only-for-ul-ol-lists */
+@layer base {
+  ul, ol {
+    list-style: revert;
+    margin: revert;
+    padding: revert;
+  }
+}
