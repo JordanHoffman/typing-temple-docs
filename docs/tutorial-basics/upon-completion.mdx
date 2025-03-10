@@ -1,0 +1,59 @@
+---
+sidebar_position: 3
+---
+import Selectable from '@site/src/components/selectable.tsx'
+import BasicComplete from '@site/static/img/basic-complete.png'
+import DetailedComplete from '@site/static/img/detailed-complete.png'
+
+# Upon Completion
+
+Once you finish typing your final verse, a results popup will appear. 
+
+## If You Turned Off "WPM Results"
+
+If you toggled the <Selectable>WPM Results</Selectable> option off, your results popup will be very simple. You can click <Selectable>Redo</Selectable> if you would like to re-type the same section again. I you would like to choose something else, just click the **close button** in the top right and you will be taken back to the starting options.
+
+<figure>
+<figcaption><i>A simple results popup when <b>WPM Results</b> is toggled off.</i></figcaption>
+<img src={BasicComplete} />
+</figure>
+
+## If You Turned On "WPM Results"
+
+If you toggled the <Selectable>WPM Results</Selectable> option on, your results popup will give statistics on what you typed.
+
+<figure>
+	<figcaption><i>A detailed results popup when <b>WPM Results</b> is toggled on.</i></figcaption>
+	<img src={DetailedComplete} />
+</figure>
+
+### Statistics Breakdown:
+
+- **Total Characters Typed:** Each letter and space counts as a character. This gives the total number you typed.
+- **Errors:** Your total number of errors (incorrect letters or spaces).
+- **Accuracy:** The percent of characters you typed correctly.
+- **Words per Minute (wpm):** Your total words typed per minute. This uses a special formula!
+
+### WPM (Words-per-Minute) Formula:
+
+<div className="inline-flex items-center mb-6">
+	<b className="">WPM</b>
+	<b className="mx-5">=</b>
+
+	<div className="inline-flex flex-col">
+		<div className="flex items-center px-3">
+			<div className="flex flex-col text-center">
+				<span><b>Total Words</b></span> 
+				<span><i>(5 characters per word)</i></span>
+			</div>
+			<div className="px-3">&mdash;</div>
+			<div><b>Total Errors</b></div>
+		</div>
+		<div className="border-1 my-2" />
+		<div className="text-center px-3"><b>Total Minutes</b></div>
+	</div>
+</div>
+
+:::caution
+Errors will lower your WPM score. Getting 1 error counts as spelling a word wrong. In other words, it's like losing the time it took you to type 5 whole characters.
+:::

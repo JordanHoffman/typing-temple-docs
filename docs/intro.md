@@ -17,7 +17,7 @@ At one point I was interested in improving my typing speed. I searched for websi
 	- **2\. World English Bible (WEB)** - A modern bible translation based off the American Standard Version (ASV). This allows for a more easily understandable typing experience.
 - **Ability to select any chapter** from the Old Testament or New Testament to type.
 - **Ability to select any verses** within a chapter to type.
-- **Options to display statistics** upon completion. These statistics inlclude:
+- **Options to display statistics**, discussed in greater detail in the **[Upon Completion](/docs/tutorial-basics/upon-completion)** section. These statistics inlclude:
 	- *Total Characters typed*
 	- *Errors*
 	- *Accuracy Percentage*

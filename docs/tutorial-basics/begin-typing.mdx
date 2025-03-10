@@ -1,0 +1,49 @@
+---
+sidebar_position: 2
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Selectable from '@site/src/components/selectable.tsx'
+import ReadyToType from '@site/static/img/ready-to-type.png'
+import TypingInProgress from '@site/static/img/typing-in-progress.png'
+import SpellingError from '@site/static/img/spelling-error.png'
+import SpaceError from '@site/static/img/space-error.png'
+
+# Let's Begin Typing!
+
+Once you've decided all of your starting options, you are ready to begin typing! Click the <Selectable>BEGIN</Selectable> button. Once your selected options have loaded, the screen will change to show you the verses you can type.
+
+:::tip
+Don't worry about losing time when you see your verses first appear. The timer won't start until you actually begin typing! 😅
+:::
+
+<br/>
+This is what the screen will look like after you click <Selectable>BEGIN</Selectable>. You can click <Selectable>CANCEL</Selectable> anytime during your typing session if you would like to abort. If you cancel, the verses will disapear and you will see the starting options again.
+<img src={ReadyToType} className="mb-10" />
+
+## Typing Your First Scriptures
+
+When you're ready, you can begin typing. You'll notice that as you begin to type, letters will begin to fill in. This helps you to keep track of what you've already typed and what letter you're currently on.
+
+<img src={TypingInProgress} className="max-w-xl mb-6" />
+
+:::tip
+If you see text starting on a new line, make sure you press **Enter**.
+:::
+
+## Making Errors
+
+Everyone makes mistakes, don't worry! If you mispell something, you will see the error appear in red. You have the option to backspace and try again, or to continue forward. Also, if you incorrectly type a "space", it will appear as a red rectangle.
+
+<Tabs>
+  <TabItem value="Spelling Error" label="Spelling Error" default>
+		Oops! Looks like we accidentally typed an extra "h" instead of an "e".
+		<img src={SpellingError} className="max-w-lg" />
+  </TabItem>
+  <TabItem value="Space Error" label="Space Error">
+		If you accidentally type an incorrect "space", it will appear as a red rectangle.
+		<img src={SpaceError} className="max-w-lg" />
+  </TabItem>
+</Tabs>
+
