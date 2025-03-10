@@ -23,14 +23,19 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #d4c62d;
-  --ifm-color-primary-dark: #c0b327;
-  --ifm-color-primary-darker: #b5a925;
-  --ifm-color-primary-darkest: #958b1f;
-  --ifm-color-primary-light: #d8cc42;
-  --ifm-color-primary-lighter: #dbcf4d;
-  --ifm-color-primary-lightest: #e1d76d;
+  --ifm-color-primary: #d9bd48;
+  --ifm-color-primary-dark: #d4b430;
+  --ifm-color-primary-darker: #cbac2a;
+  --ifm-color-primary-darkest: #a88e23;
+  --ifm-color-primary-light: #dec660;
+  --ifm-color-primary-lighter: #e0ca6c;
+  --ifm-color-primary-lightest: #e8d790;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* add 997px bp that docusaurus uses. (This is via min-width bp, docs say 996 b/c they use max-width). */
+@theme {
+	--breakpoint-desk: 997px;
 }
 
 /* tailwind seems to have broken some link alignments. Fixing them. */
