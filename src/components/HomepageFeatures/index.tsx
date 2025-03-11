@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/speed.svg').default,
     description: (
       <>
-        Choose whether or not you would like to see typing statisics such as words-per-minut (wpm) when you're finished typing.
+        Choose whether or not you would like to see typing statisics such as words-per-minute (wpm) when you're finished typing.
       </>
     ),
   },
