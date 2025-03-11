@@ -40,7 +40,7 @@
 
 /* tailwind seems to have broken some link alignments. Fixing them. */
 .navbar__link, .footer__link-item, .theme-edit-this-page {
-	display: flex;
+	display: flex !important;
 	align-items: center;
 }
 .breadcrumbs {
@@ -50,6 +50,16 @@
 .breadcrumbs__item {
 	display: inline-flex;
 	align-items: center;
+}
+
+nav .breadcrumbs {
+	flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+	.navbar__items--right {
+		display: none;
+	}
 }
 
 /* tailwind strips lists of their style. Adding it back: https://stackoverflow.com/questions/75915737/tailwind-is-there-a-way-to-disable-preflight-only-for-ul-ol-lists */
