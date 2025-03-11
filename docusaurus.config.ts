@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Typing Temple',
+  title: 'Typing Temple Docs',
   tagline: 'Improve Your Typing Skills Through Biblical Verses',
   favicon: 'img/favicon.ico',
 
