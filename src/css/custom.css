@@ -38,11 +38,24 @@
 	--breakpoint-desk: 997px;
 }
 
-/* tailwind seems to have broken some link alignments. Fixing them. */
+/* tailwind seems to have broken numerous alignments. Fixing them. */
 .navbar__link, .footer__link-item, .theme-edit-this-page {
-	display: flex !important;
+	display: flex;
 	align-items: center;
 }
+
+/* Unfortunately, the top fix breaks the default hiding of top navbar items on mobile. Need to fix that too. */
+@media (max-width: 996px) {
+	.navbar .navbar__link {
+		display: none;
+	}
+}
+
+/* Gotta !important this one to get footer links to align properly */
+.footer__link-item {
+	display: flex !important;
+}
+
 .breadcrumbs {
 	display: flex;
 }
@@ -56,11 +69,7 @@ nav .breadcrumbs {
 	flex-wrap: wrap;
 }
 
-@media (max-width: 640px) {
-	.navbar__items--right {
-		display: none;
-	}
-}
+/* End of Tailwind alignment fixes. */
 
 /* tailwind strips lists of their style. Adding it back: https://stackoverflow.com/questions/75915737/tailwind-is-there-a-way-to-disable-preflight-only-for-ul-ol-lists */
 @layer base {
